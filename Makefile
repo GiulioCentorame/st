@@ -46,10 +46,12 @@ install: st
 	@echo Please see the README file regarding the terminfo entry of st.
 	mkdir -p $(DESTDIR)$(APPPREFIX)
 	cp -f st.desktop $(DESTDIR)$(APPPREFIX)
+	cp -f st_tmux.desktop $(DESTDIR)$(APPPREFIX)
 
 uninstall:
 	rm -f $(DESTDIR)$(PREFIX)/bin/st
 	rm -f $(DESTDIR)$(APPPREFIX)/st.desktop
+	rm -f $(DESTDIR)$(APPPREFIX)/st_tmux.desktop
 	rm -f $(DESTDIR)$(MANPREFIX)/man1/st.1
 
 .PHONY: all clean dist install uninstall

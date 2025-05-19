@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Exec=st -e tmux
+TryExec=st
+Icon=utilities-terminal
+Terminal=false
+Categories=System;TerminalEmulator;
+
+Name=st (+ tmux)
+GenericName=Terminal
+Comment=Launch a tmux session with st, a simple terminal implementation for X.
+StartupWMClass=st-256color
